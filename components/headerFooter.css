@@ -269,7 +269,9 @@ a {
     padding: 1px;
 }
 
-.fa-facebook-f, .fa-twitter, .fa-instagram {
+.fa-facebook-f,
+.fa-twitter,
+.fa-instagram {
     font-size: 20px;
 }
 
@@ -290,4 +292,29 @@ a {
 #navbar2 a {
     text-decoration: none;
     color: black;
+}
+
+.btn-primary {
+    width: 150px;
+}
+
+#queries,
+#social {
+    cursor: pointer;
+}
+
+li a {
+    color: grey;
+    text-decoration: none;
+}
+
+li:hover {
+    cursor: pointer;
+    color: skyblue;
+}
+
+.modal #fillOtp input{
+    width: 10%;
+    height: 40px;
+    text-align: center;
 }
