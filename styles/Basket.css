@@ -1,0 +1,133 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:'Montserrat', sans-serif;
+}
+
+#heading1{
+    width: 80%;
+    margin: auto;
+    font-size: 22px;
+    line-height: 2.5;
+}
+
+#heading1>hr{
+    border: 0.5px solid;
+    border-color: rgb(230, 234, 238);
+}
+
+#basket-length{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}   
+
+
+#basket-container{
+    width: 80%; 
+    margin: auto;
+    display: flex;
+    gap: 15px; 
+
+}
+
+#left{
+    /* border: 1px solid;  */
+    width: 68%;
+    
+}
+
+#right{
+    border: 1px solid #dedddd;
+    width: 32%;
+}
+
+#outerBox1{
+    border: 1px solid #dedddd;
+    margin-bottom: 10px;
+}
+
+
+#innerbox1{
+    display: flex; 
+    padding: 15px;
+} 
+
+#picDiv{
+    width: 10%; 
+} 
+
+#infoDiv{
+    font-size: 14px; 
+    padding-left: 10px; 
+    font-weight: bold;
+}
+
+#innerbox1 > div >img{
+    width: 100%;
+}
+
+#midContent{
+    display: flex; 
+    gap: 5px; 
+    font-size: 14px;
+}
+
+#innerbox2{
+    display: flex;
+    justify-content: space-between; 
+    padding-left: 15px; 
+    padding-right: 15px;
+    padding-bottom: 10px;
+    /* border: 1px solid #dedddd; */
+}
+
+#innerbox2>select{
+    border: 0;
+    padding: 4px ;
+    background-color:#ecedeb;
+}
+
+
+#innerbox3{
+    display: flex; 
+    justify-content: space-evenly;
+    padding: 15px;
+}
+
+#innerbox3> p{
+    color: #dedddd;
+}
+
+#outerBox1>hr{
+    width: 96%;
+    margin: auto;
+    border: 0.5px solid #efecec;
+}
+
+#innerbox3>button{
+    border: 0;
+    background: transparent;
+    color: #303ab2;
+    font-weight: bold;
+}
+
+#innerbox3>button:hover{
+    cursor: pointer;
+}
+
+#Pincode-section{
+    display: flex; 
+    align-items: center;
+    padding: 15px;
+    gap: 15px;
+    border: 1px solid #dedddd;
+}
+
+#Pincode-section >input{
+      height: 40px;
+      border-radius: 5px; 
+      border-color: #dedddd;
+}
