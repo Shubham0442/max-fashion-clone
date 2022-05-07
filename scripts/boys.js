@@ -29,6 +29,12 @@ $(".inputs").keyup(function () {
 
 let userName = JSON.parse(localStorage.getItem('userName'));
 document.querySelector('#user').innerHTML = "Hello " + userName[0];
+
+function landHome() {
+  window.location.href = 'index.html';
+}
+
+document.querySelector('#mainLogo').addEventListener('click', landHome);
 // Header and Footer part ends here
 
 document.querySelector('.prev').addEventListener('click', function() {plusSlides(1)});

@@ -26,6 +26,12 @@ $(".inputs").keyup(function () {
         $(this).next('.inputs').focus();
     }
 });
+
+function landHome() {
+    window.location.href = 'index.html';
+}
+
+document.querySelector('#mainLogo').addEventListener('click', landHome);
 // Header and Footer part ends here
 
 document.querySelector('#women').addEventListener('click', gotoWomen);

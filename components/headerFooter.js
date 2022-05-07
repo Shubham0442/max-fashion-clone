@@ -40,9 +40,13 @@ function navbar() {
             </button>
         </div>
         <div style="color: grey; font-size: 18px;">|</div>
-        <div><a href="cart.html">Basket<span style="margin-left: 10px;"><i
-                        class="fa-solid fa-bag-shopping"></i></span><span id="basketCounter">1</span></a></div>
-    </div>
+        <a href="cart.html"><div style = "display: flex;"> 
+        <div>Basket 
+            <i class="fa-solid fa-bag-shopping" style="margin-left: 10px;"></i> 
+        </div>
+                <div id="basketCounter">1</div>
+            </div>
+    </div> </a>
 </div>
 
 <div class="modal fade" id="signup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -296,4 +300,4 @@ function footer() {
 </div>`
 }
 
-export {navbar, footer};
+export { navbar, footer };

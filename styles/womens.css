@@ -1,33 +1,27 @@
 
-*{
-    margin:0px;
+* {
+    margin: 0px;
     padding: 0px;
 }
 
 
 /* carousel section :start */
-#carouselExampleIndicators{
-    
+#carouselExampleIndicators {
     width: 80%;
-    /* height:px;  */
     margin: auto;
     margin-top: 40px;
-    /* border: 1px solid; */
 }
+
 /* carousel section ends */
-
-
-
-
 /* flat off section starts */
-#flat-off{
+#flat-off {
     padding-top: 120px;
     width: 80%;
     margin: auto;
     cursor: pointer;
 }
 
-#flat-off>hr{
+#flat-off>hr {
     border-color: rgb(73, 76, 79);
     width: 100%;
     height: 0.5px;
@@ -35,13 +29,14 @@
     margin-bottom: 70px;
     /* margin: auto;  */
 }
+
 /* flat off section ends */
 
 
 
 
 /* back-to-work section starts */
-.back-to-work{
+.back-to-work {
     width: 80%;
     height: 500px;
     margin: auto;
@@ -49,56 +44,59 @@
     cursor: pointer;
 }
 
-.back-to-work>img{
+.back-to-work>img {
     width: 100%;
 }
-.back-to-work>p{
+
+.back-to-work>p {
     font-size: 40px;
 }
 
-.back-to-work>img+hr{
+.back-to-work>img+hr {
     width: 100%;
     height: 0.5px;
     border-color: rgb(73, 76, 79);
     margin-top: 70px;
 }
+
 /* back-to-work section ends */
 
 
 
 
 /* Shop-Plus-Size section starts */
-#Shop-Plus-Size{
-   
-   display: flex;
-   width: 100%;
-   margin: auto;
-   justify-content: space-around;
-   gap: 15px;
-   margin-bottom: 60px;
-   /* border: 1px solid; */
-   text-align: center;
-   cursor: pointer;
+#Shop-Plus-Size {
+
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: space-around;
+    gap: 15px;
+    margin-bottom: 60px;
+    border: 1px solid;
+    text-align: center;
+    cursor: pointer;
 }
 
 
-#Shop-Plus-Size>div>img{
+#Shop-Plus-Size>div>img {
     width: 100%;
     height: 85%;
-    
+
 }
 
-#Shop-Plus-Size>div>p{
+#Shop-Plus-Size>div>p {
     font-size: 18px;
     font-weight: bold;
 }
-#outer-Shop-Plus-Size{
+
+#outer-Shop-Plus-Size {
     width: 80%;
     margin: auto;
     padding-top: 120px;
 }
 
-#outer-Shop-Plus-Size>p{
+#outer-Shop-Plus-Size>p {
     font-size: 35px;
 }
 
@@ -110,53 +108,46 @@
 
 
 /* Shop-By-Category section starts  */
-#Shop-By-Category{
-    display: flex; 
+#Shop-By-Category {
+    display: flex;
     width: 100%;
     margin: auto;
     gap: 15px;
-   margin-bottom: 60px;
-   text-align: center;
-   
+    margin-bottom: 60px;
+    text-align: center;
+
 }
 
 
-#Shop-By-Category>div>img{
+#Shop-By-Category>div>img {
     width: 100%;
     height: 85%;
 }
 
-#Shop-By-Category>div>p{
+#Shop-By-Category>div>p {
     font-size: 18px;
     font-weight: bold;
     font-family: sans-serif;
 }
 
-#outer-Shop-By-Category{
+#outer-Shop-By-Category {
     width: 80%;
     margin: auto;
     padding-top: 60px;
 }
 
-#outer-Shop-By-Category>p{
+#outer-Shop-By-Category>p {
     font-size: 35px;
 }
 
-
-
-#box1:hover{
+#box1:hover {
     cursor: pointer;
 }
+
 /* Shop-By-Category section ends  */
 
-
-
-
-
-
-
 /* Trending stores, budget zone, youth store, summer trends section starts */
-.Trending-Stores{
+.Trending-Stores {
     display: flex;
     width: 100%;
     margin: auto;
@@ -164,21 +155,20 @@
     cursor: pointer;
 }
 
-.Trending-Stores>div>img{
+.Trending-Stores>div>img {
     width: 100%;
 }
 
-.outer-Trending-Stores{
-  width: 80%;
-  margin: auto;
- 
+.outer-Trending-Stores {
+    width: 80%;
+    margin: auto;
 }
 
-.outer-Trending-Stores>p{
+.outer-Trending-Stores>p {
     font-size: 35px;
 }
 
-.outer-Trending-Stores>hr{
+.outer-Trending-Stores>hr {
     margin-bottom: 60px;
     margin-top: 60px;
 }
@@ -187,51 +177,57 @@
 
 
 /* Connect-with-us section starts */
-.outer-Connect-with-us{
+.outer-Connect-with-us {
     width: 80%;
     margin: auto;
 }
 
-.outer-Connect-with-us>p{
+.outer-Connect-with-us>p {
     font-size: 35px;
 }
 
-.Connect-with-us>div>img{
-   width: 100%;
+.Connect-with-us>div>img {
+    width: 100%;
 }
-.outer-Connect-with-us>hr{
+
+.outer-Connect-with-us>hr {
     margin-bottom: 60px;
     margin-top: 60px;
 }
+
 /* Connect-with-us section endss */
 
 
 /* Gifting-Zone section starts */
-#outer-Gifting-Zone{
+#outer-Gifting-Zone {
     width: 80%;
     margin: auto;
 }
-#outer-Gifting-Zone>div{
+
+#outer-Gifting-Zone>div {
     width: 100%;
     margin: auto;
 }
 
-#Gifting-Zone>a>img{
+#Gifting-Zone>a>img {
     width: 100%;
-    
 }
-#outer-Gifting-Zone>hr{
+
+#outer-Gifting-Zone>hr {
     margin-bottom: 60px;
     margin-top: 60px;
 }
 
-#outer-Gifting-Zone>p{
-   font-size: 35px;
+#outer-Gifting-Zone>p {
+    font-size: 35px;
 }
+
 /* Gifting-Zone section ends */
 
-hr{
+hr {
     border-color: rgb(239, 226, 226);
-   
 }
 
+img {
+    width: 100%;
+}

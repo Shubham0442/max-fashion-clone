@@ -45,7 +45,7 @@ let d24 = new div("https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/ht
 
 
 WomensData.push(d1, d2, d3, d4, d5, d6, d7, d8, d9, d10, d11, d12, d13, d14, d15, d16, d17, d18, d19, d20, d21, d22, d23, d24)
-console.log(WomensData)
+console.log(WomensData);
 
 
 // fetch("http://localhost:3000/womensData")
@@ -63,6 +63,16 @@ console.log(WomensData)
 
 let myBasket = JSON.parse(localStorage.getItem("basket")) || [];
 
+// function addToWishlist() {
+//     console.log('executed');
+//     document.querySelector('#heartIcon').style.backgroundColor = 'red';
+// }
+
+// document.querySelector('#parentDiv').addEventListener('mouseover', function(event) {
+//     console.log('executed');
+//     event.document.querySelector(".innerDiv").style.visibilty = "visible";
+// })
+
 let displayWomensData = (WomensData) => {
 
     document.querySelector("#container").innerHTML = null;
@@ -72,9 +82,14 @@ let displayWomensData = (WomensData) => {
         let parentDiv = document.createElement("div")
         parentDiv.setAttribute("id", "parentDiv")
 
+        let childDiv1 = document.createElement('div');
+        childDiv1.setAttribute('id', 'childDiv1');
+        let childDiv2 = document.createElement('div');
+        childDiv2.setAttribute('id', 'childDiv2');
+
         let iconDiv = document.createElement("div")
         iconDiv.setAttribute("id","iconDiv")
-        iconDiv.innerHTML = '<i class="fa-regular fa-heart"></i>'
+        iconDiv.innerHTML = '<span><i class="fa-regular fa-heart" id="heartIcon" onclick="addToWishlist()"></span>'
 
         let innerDiv = document.createElement("div")
         innerDiv.setAttribute("class", "innerDiv")
@@ -85,9 +100,7 @@ let displayWomensData = (WomensData) => {
         let image1 = document.createElement("img")
         image1.src = image
         
-        imageDiv.append(iconDiv,image1)
-        // let price1 = document.createElement("p")
-        // price1.innerText = price 
+        imageDiv.append(iconDiv,image1);
 
         let pricesign = document.createElement("p")
         pricesign.setAttribute("id","pricesign")
@@ -109,14 +122,17 @@ let displayWomensData = (WomensData) => {
              addToBasket(data)
         })
 
+        innerDiv.append(pricesign, name1, btn);
+        innerDiv.addEventListener('mouseover', function(e) {
+            e.document.querySelector('.innerDiv').style.visibilty = "visible";
+        })
 
-        innerDiv.append(pricesign, name1, btn)
-
-         parentDiv.append(imageDiv,innerDiv)
+        parentDiv.append(imageDiv,innerDiv)
 
         document.querySelector("#container").append(parentDiv)
     })
 }
+
 
 let addToBasket = (data) =>{
     myBasket.push(data) 
@@ -148,3 +164,8 @@ let handlePrice = () =>{
      }
         
  }
+
+//  let show = () => {
+//     document.querySelector(".innerDiv").style.visibilty = "visible";
+//  }
+
