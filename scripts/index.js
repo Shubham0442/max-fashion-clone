@@ -1,3 +1,33 @@
+// Header and Footer part starts here
+import { navbar, footer } from '../components/headerFooter.js';
+
+document.querySelector('#nav').innerHTML = navbar();
+document.querySelector('#footer').innerHTML = footer();
+
+window.onscroll = function () {
+    myFunction();
+}
+
+var navbar2 = document.querySelector('#navbar2');
+var sticky = navbar2.offsetTop;
+
+function myFunction() {
+    console.log(sticky);
+    if (window.pageYOffset >= sticky) {
+        console.log("x");
+        navbar2.classList.add("sticky");
+    } else {
+        console.log("y");
+        navbar2.classList.remove("sticky");
+    }
+}
+$(".inputs").keyup(function () {
+    if (this.value.length == this.maxLength) {
+        $(this).next('.inputs').focus();
+    }
+});
+// Header and Footer part ends here
+
 document.querySelector('#women').addEventListener('click', gotoWomen);
 function gotoWomen() {
     window.location.href = 'women.html';
@@ -63,32 +93,32 @@ function otpVerification() {
 }
 
 let userName = JSON.parse(localStorage.getItem('userName'));
-let j=0;
+let j = 0;
 function setUsername() {
     let username = [];
     let fName = document.querySelector('#fname').value;
     let lName = document.querySelector('#lname').value;
     username.push(fName);
     username.push(lName);
-    if(j == 1) {
+    if (j == 1) {
         return;
-    } else if(fName.length != 0 && lName.length != 0) {
+    } else if (fName.length != 0 && lName.length != 0) {
         document.querySelector('#userName').setAttribute('data-bs-dismiss', 'modal');
-        $(document).ready(function() {
+        $(document).ready(function () {
             document.querySelector('#userName').click();
         })
         localStorage.setItem('userName', JSON.stringify(username));
         j++;
         window.location.reload();
-    } else if(fName.length == 0 && lName.length == 0) {
+    } else if (fName.length == 0 && lName.length == 0) {
         document.querySelector('#fname').setAttribute('placeholder', 'Please fill your first name');
         document.querySelector('#fname').style.color = 'red';
         document.querySelector('#lname').setAttribute('placeholder', 'Please fill your last name');
         document.querySelector('#lname').style.color = 'red';
-    } else if (fName.length==0) {
+    } else if (fName.length == 0) {
         document.querySelector('#fname').setAttribute('placeholder', 'Please fill your first name');
         document.querySelector('#fname').style.color = 'red';
-    } else if(lName.length == 0) {
+    } else if (lName.length == 0) {
         document.querySelector('#lname').setAttribute('placeholder', 'Please fill your last name');
         document.querySelector('#lname').style.color = 'red';
     }

@@ -35,10 +35,3 @@
 #test {
     height: 400px;
 }
-
-.modal .modal-footer .btn-secondary {
-    background-color: #303ab2;
-    border: none;
-    border-radius: 0;
-    padding: 10px 40px;
-}
