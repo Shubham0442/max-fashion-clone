@@ -32,6 +32,15 @@ function landHome() {
 }
 
 document.querySelector('#mainLogo').addEventListener('click', landHome);
+
+let basketData = JSON.parse(localStorage.getItem('basket'));
+console.log(basketData);
+if(basketData.length === 0) {
+    document.querySelector('#basketCounter').style.visibility = "hidden";
+} else {
+    document.querySelector('#basketCounter').innerText = basketData.length;
+    document.querySelector('#basketCounter').style.visibility = "visible";
+}
 // Header and Footer part ends here
 
 document.querySelector('#women').addEventListener('click', gotoWomen);

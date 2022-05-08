@@ -169,3 +169,11 @@ let handlePrice = () =>{
 //     document.querySelector(".innerDiv").style.visibilty = "visible";
 //  }
 
+let basketData = JSON.parse(localStorage.getItem('basket'));
+console.log(basketData);
+if (basketData.length === 0) {
+  document.querySelector('#basketCounter').style.visibility = "hidden";
+} else {
+  document.querySelector('#basketCounter').innerText = basketData.length;
+  document.querySelector('#basketCounter').style.visibility = "visible";
+}
