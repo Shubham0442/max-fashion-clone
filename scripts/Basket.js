@@ -1,4 +1,5 @@
 
+
 // getting the key from local storage
 let basketData = JSON.parse(localStorage.getItem("basket"))
 
@@ -14,7 +15,7 @@ document.querySelector("#basket-length>p").textContent = `${basketData.length} P
 // mapping the data inside the basket 
 
 
-let displayBasket = (basketData) =>{
+let displayBasket = (basketData) => {
 
     document.getElementById("left").innerHTML = null
 

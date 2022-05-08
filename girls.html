@@ -1,16 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./components/headerFooter.css">
     <link rel="stylesheet" href="./styles/girls.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Girls</title>
 </head>
+
 <body>
-    <header id="navbar"></header>
+    <header id="nav"></header>
+
+    <div class="slideshow-containerB">
+
+        <div class="mySlides slideIn">
+            <img src="https://lmsin.net/cdn-cgi/image/w=1232,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/MAX-Banner2-desktop-Girls-Boys-05MAY2022.gif"
+                style="width:100%">
+        </div>
+
+        <div class="mySlides slideIn">
+            <img src="https://lmsin.net/cdn-cgi/image/w=1232,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/MAX-Banner4-desktop-Boys-05MAY2022.jpg"
+                style="width:100%">
+        </div>
+
+        <div class="mySlides slideIn">
+            <img src="https://lmsin.net/cdn-cgi/image/w=1232,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/MAX-Banner3-desktop-Boys-05MAY2022.jpg"
+                style="width:100%">
+        </div>
+
+    </div>
+    <a class="prev"><i class="fa-solid fa-chevron-left"></i></a>
+    <a class="next"><i class="fa-solid fa-chevron-right"></i></a>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" id="slide1"></span>
+        <span class="dot" id="slide2"></span>
+        <span class="dot" id="slide3"></span>
+    </div>
 
     <footer id="footer"></footer>
 </body>
+
 </html>
+
+<script>
+    document.querySelector('.prev').addEventListener('click', function () { plusSlides(1) });
+    document.querySelector('.next').addEventListener('click', function () { plusSlides(-1) });
+    document.querySelector('#slide1').addEventListener('click', function () { currentSlide(1) });
+    document.querySelector('#slide2').addEventListener('click', function () { currentSlide(2) });
+    document.querySelector('#slide3').addEventListener('click', function () { currentSlide(3) });
+
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 6000);
+    }
+
+    let slideIndexM = 1;
+    showSlidesM(slideIndexM);
+
+    function plusSlides(n) {
+        showSlidesM(slideIndexM += n);
+    }
+
+    function currentSlide(n) {
+        showSlidesM(slideIndexM = n);
+    }
+
+    function showSlidesM(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndexM = 1 }
+        if (n < 1) { slideIndexM = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndexM - 1].style.display = "block";
+        dots[slideIndexM - 1].className += " active";
+    }
+</script>
+
+<script src="./scripts/girls.js" type="module"></script>
+<script src="https://kit.fontawesome.com/8328d59403.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/8328d59403.js" crossorigin="anonymous"></script>

@@ -157,13 +157,11 @@ let displayWomensData = (WomensData) => {
         }
 
         btn.addEventListener("click", function () {
-            addToBasket(data)
+            addToBasket(data);
+            window.location.reload();
         })
 
         innerDiv.append(pricesign, name1, btn);
-        innerDiv.addEventListener('mouseover', function (e) {
-            e.document.querySelector('.innerDiv').style.visibilty = "visible";
-        })
 
         parentDiv.append(imageDiv, innerDiv)
 
@@ -176,6 +174,7 @@ let addToBasket = (data) => {
     myBasket.push(data)
 
     localStorage.setItem("basket", JSON.stringify(myBasket));
+    window.location.reload();
 }
 
 

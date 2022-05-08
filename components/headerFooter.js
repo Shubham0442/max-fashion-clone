@@ -41,7 +41,7 @@ function navbar() {
         </div>
         <div style="color: grey; font-size: 18px;">|</div>
         <a href="cart.html"><div style = "display: flex;"> 
-        <div>Basket 
+        <div><a href="Basket.html"> Basket </a>
             <i class="fa-solid fa-bag-shopping" style="margin-left: 10px;"></i> 
         </div>
                 <div id="basketCounter">1</div>

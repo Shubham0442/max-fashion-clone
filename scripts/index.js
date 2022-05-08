@@ -33,12 +33,12 @@ function landHome() {
 
 document.querySelector('#mainLogo').addEventListener('click', landHome);
 
+document.querySelector('#basketCounter').innerText = basketData.length;
 let basketData = JSON.parse(localStorage.getItem('basket'));
 console.log(basketData);
 if(basketData.length === 0) {
     document.querySelector('#basketCounter').style.visibility = "hidden";
 } else {
-    document.querySelector('#basketCounter').innerText = basketData.length;
     document.querySelector('#basketCounter').style.visibility = "visible";
 }
 // Header and Footer part ends here

@@ -1,52 +1,53 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
-    font-family:sans-serif;
+    font-family: sans-serif;
 }
 
 
 /* heading starts */
-#heading1{
+#heading1 {
     width: 80%;
     margin: auto;
     font-size: 22px;
     line-height: 2.5;
 }
 
-#heading1>hr{
+#heading1>hr {
     border: 0.5px solid;
     border-color: rgb(230, 234, 238);
 }
+
 /* heading ends */
 
 
-#basket-length{
+#basket-length {
     width: 80%;
     margin: auto;
     margin-top: 20px;
     font-weight: bold;
     margin-bottom: 20px;
-}   
+}
 
 
 /* basket main container */
-#basket-container{
-    width: 80%; 
+#basket-container {
+    width: 80%;
     margin: auto;
     display: flex;
-    gap: 14px; 
+    gap: 14px;
 
 }
 
 
 /* basket sub-containers */
-#left{
+#basket-container #left {
     /* border: 1px solid;  */
     width: 68%;
-    
+
 }
 
-#right{
+#basket-container #right {
     /* border: 1px solid #dedddd; */
     width: 32%;
 }
@@ -54,7 +55,7 @@
 
 
 /* outerbox ends */
-#outerBox1{
+#outerBox1 {
     border: 1px solid #dedddd;
     margin-bottom: 10px;
 }
@@ -64,28 +65,28 @@
 
 
 /* innerbox1 section starts */
-#innerbox1{
-    display: flex; 
+#innerbox1 {
+    display: flex;
     padding: 15px;
-} 
-
-#picDiv{
-    width: 10%; 
-} 
-
-#infoDiv{
-    font-size: 14px; 
-    padding-left: 10px; 
-    font-weight:550;
 }
 
-#innerbox1 > div >img{
+#picDiv {
+    width: 10%;
+}
+
+#infoDiv {
+    font-size: 14px;
+    padding-left: 10px;
+    font-weight: 550;
+}
+
+#innerbox1>div>img {
     width: 100%;
 }
 
-#midContent{
-    display: flex; 
-    gap: 5px; 
+#midContent {
+    display: flex;
+    gap: 5px;
     font-size: 14px;
 }
 
@@ -94,49 +95,50 @@
 
 /* innerbox2 section starts */
 
-#innerbox2{
+#innerbox2 {
     display: flex;
-    justify-content: space-between; 
-    padding-left: 15px; 
+    justify-content: space-between;
+    padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 10px;
     /* border: 1px solid #dedddd; */
 }
 
-#innerbox2>select{
+#innerbox2>select {
     border: 0;
-    padding: 4px ;
-    background-color:#ecedeb;
+    padding: 4px;
+    background-color: #ecedeb;
 }
+
 /* innerbox2 section ends */
 
 
 
 /* innerbox3 section starts */
-#innerbox3{
-    display: flex; 
+#innerbox3 {
+    display: flex;
     justify-content: space-evenly;
     padding: 15px;
 }
 
-#innerbox3> p{
+#innerbox3>p {
     color: #dedddd;
 }
 
-#outerBox1>hr{
+#outerBox1>hr {
     width: 96%;
     margin: auto;
     border: 0.5px solid #efecec;
 }
 
-#innerbox3>button{
+#innerbox3>button {
     border: 0;
     background: transparent;
     color: #303ab2;
     font-weight: bold;
 }
 
-#innerbox3>button:hover{
+#innerbox3>button:hover {
     cursor: pointer;
 }
 
@@ -145,72 +147,74 @@
 
 /* Pincode section starts */
 
-#Pincode-section>div{
-    display: flex; 
+#Pincode-section>div {
+    display: flex;
     align-items: center;
-    padding: 15px;
-    gap: 14px;
-    font-weight:550;
+    padding: 10px;
+    gap: 10px;
+    font-weight: 550;
 }
 
-#Pincode-section{
+#Pincode-section {
     font-size: 14px;
     border: 1px solid #dedddd;
-    margin-bottom:10px;
+    margin-bottom: 10px;
 }
 
-#Pincode-section>div>input{
-      height: 40px;
-      border: 1px solid  #dedddd;
-      border-radius: 5px; 
-      padding: 4px;
+#Pincode-section>div>input {
+    height: 40px;
+    border: 1px solid #dedddd;
+    border-radius: 5px;
+    padding: 4px;
 }
 
-#Pincode-section>div>button{
-    padding: 15px 20px 15px 20px;
-    border: 1px solid  #dedddd;
+#Pincode-section>div>button {
+    padding: 9px 17px;
+    border: 1px solid #dedddd;
     background: transparent;
     border-radius: 5px;
-    font-size: 15px; 
-    color:rgb(186, 185, 185); 
+    font-size: 15px;
+    color: rgb(186, 185, 185);
     font-weight: 550;
 }
 
-#Pincode-section>div>button:hover{
-    cursor: pointer; 
+#Pincode-section>div>button:hover {
+    cursor: pointer;
 }
 
-#checkedOp{
+#checkedOp {
     text-align: center;
-    font-size: 12px; 
+    font-size: 12px;
     font-weight: 550;
 }
+
 /* Pincode section ends */
 
 
 
- /* total price section starts */
-#offer-section{
+/* total price section starts */
+#offer-section {
     display: flex;
-    padding:12.5px;
-    border: 1px solid  #dedddd;
-    margin-bottom:10px;
+    justify-content: space-between;
+    gap: 7px;
+    border: 1px solid #dedddd;
+    margin-bottom: 10px;
 }
 
-#offer-section>img{
-    width: 110px;
+#offer-section img {
+    width: 100%;
     padding-right: 20px;
-} 
+}
 
-#offer-section>div>div{
+#offer-section>div>div {
     display: flex;
     justify-content: space-between;
     padding-bottom: 10px;
-    font-weight: 550; 
+    font-weight: 550;
 }
 
-#inputPromp{
-    border: 1px solid  #dedddd;
+#inputPromp {
+    border: 1px solid #dedddd;
     border-radius: 5px;
     height: 20px;
     font-size: 10px;
@@ -218,7 +222,7 @@
     margin-top: 5px;
 }
 
-#offer-section>div>div>button{
+#offer-section>div>div>button {
     border: 0;
     padding-left: 5px;
     background: transparent;
@@ -227,38 +231,38 @@
     font-weight: 550;
 }
 
-#offer-section>div>div>button:hover{
+#offer-section>div>div>button:hover {
     cursor: pointer;
 }
 
-#offer-section>div>p{
+#offer-section>div>p {
     font-size: 13.5px;
     color: rgb(130, 128, 128);
 }
 
-#MRPprice{
+#MRPprice {
     display: flex;
     justify-content: space-between;
     padding: 15px;
     font-size: 14px;
 }
 
-#MRPprice>p+p{
+#MRPprice>p+p {
     font-weight: 550;
 }
 
-#shipping{
+#shipping {
     display: flex;
     justify-content: space-between;
     padding: 15px;
     font-size: 14px;
 }
 
-#shipping>p+p{
+#shipping>p+p {
     font-weight: 550;
 }
 
-#totalDiv>div{
+#totalDiv>div {
     display: flex;
     justify-content: space-between;
     padding: 15px;
@@ -266,19 +270,19 @@
     font-weight: 550;
 }
 
-#total-section{
-    border: 1px solid  #dedddd;
+#total-section {
+    border: 1px solid #dedddd;
     padding-bottom: 15px;
-   margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
-#total-section>hr{
+#total-section>hr {
     width: 90%;
     margin: auto;
-    border: 0.4px solid  #efebeb;
+    border: 0.4px solid #efebeb;
 }
 
-#totalDiv>button{
+#totalDiv>button {
     display: block;
     margin: auto;
     padding: 12px 120px 12px 120px;
@@ -290,7 +294,7 @@
 
 }
 
-#totalDiv>button:hover{
+#totalDiv>button:hover {
     cursor: pointer;
 }
 
@@ -298,51 +302,51 @@
 
 
 /* enroll esction starts */
-#Enroll-section{
-    border: 1px solid  #dedddd;
+#Enroll-section {
+    border: 1px solid #dedddd;
     padding: 15px;
 }
 
-#Enroll-section>div{
+#Enroll-section>div {
     display: flex;
     align-items: center;
     padding-bottom: 8px;
 }
 
-#Enroll-section>div>img{
+#Enroll-section>div>img {
     width: 25px;
 }
 
 
-#Enroll-section>div>p{
-    padding-right:50px;
+#Enroll-section>div>p {
+    padding-right: 50px;
     font-weight: 550;
     font-size: 15px;
 }
 
-#Enroll-section>p{
+#Enroll-section>p {
     color: gray;
     font-size: 14px;
     padding-bottom: 8px;
 }
 
-#Enroll-section>a{
+#Enroll-section>a {
     font-weight: 550;
     font-size: 14px;
 }
 
-#Enroll-section>div>a>button{
-    background: transparent; 
+#Enroll-section>div>a>button {
+    background: transparent;
     padding: 10px;
     border: 0.5px solid;
-    border-color: #303ab2; 
+    border-color: #303ab2;
     color: #303ab2;
     font-weight: 550;
     font-size: 15px;
 
 }
 
-#Enroll-section>div>a>button:hover{
+#Enroll-section>div>a>button:hover {
     cursor: pointer;
 }
 
