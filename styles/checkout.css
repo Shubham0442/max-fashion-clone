@@ -1,0 +1,284 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+#heading-check{
+    width: 80%;
+    display: flex; 
+    height: 50px; 
+    /* border: 1px solid red; */
+    justify-content: space-between;
+    margin: auto;
+    font-size: 12px;
+    color: gray;
+}
+
+#heading-check>img{
+    width: 100px;
+}
+
+hr{
+    border: 0.5px solid #dddfe2 ; 
+}
+
+#phoneIcon{
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    justify-content: end;
+    gap: 5px;
+    color: gray;
+}
+
+#phoneIcon>div{
+    border: 1px solid  gray;
+    padding: 5px;
+    color: gray;
+    border-radius: 50%; 
+   
+}
+
+#main-container{
+    width: 80%; 
+    margin: auto;
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+#leftDiv{
+   width: 65%;
+   /* border: 1px solid  #dedddd; */
+   margin: auto;
+}
+#rightDiv{
+    width: 35%;
+    /* border: 1px solid  #dedddd; */
+}
+#firstInnerDiv{
+    display: flex; 
+    text-align: center;
+    gap: 10px;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+#firstInnerDiv>div{
+    border: 2px solid #303ab2;
+    padding: 15px 50px 15px 50px;
+    font-size: 14px;
+    width: 40%;
+}
+
+#firstInnerDiv >div+div{
+    border: 1px solid  #dedddd;
+    width: 40%;
+}
+
+#firstInnerDiv>div>p{
+    color: #969393;
+    font-size: 12px;
+}
+
+
+#leftDiv>h3{
+    margin-top: 30px;
+    margin-bottom: 30px;
+} 
+
+form{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 2px;
+}
+
+form>input{
+    width: 500px;
+    height: 35px; 
+    border: 1px solid #dddfe2 ;
+    padding-left: 30px;
+}
+
+#code{
+    display: block;
+    padding: 10px;
+    background-color:#eeeeee; 
+    font-weight: 550;
+    border: 1px solid #dddfe2;
+    margin-top: 1px;
+    
+}
+
+#code+input{
+    width: 485px;
+    height: 35px; 
+    border: 1px solid #dddfe2 ;
+
+}
+
+#numSpan{
+   display: block;
+   display: flex;
+   font-size: 15px;
+   align-items: center;
+}
+
+h5{
+    display: block;
+    margin-top: 20px;
+} 
+
+span{
+   display: block;
+   display: flex;
+   font-size: 15px;
+   align-items: center; 
+   padding: 10px; 
+   padding-top: 20px;
+   padding-bottom: 20px;
+} 
+
+span>h5{
+    margin-top:-4px; 
+}
+
+span>img{
+    width: 30px;
+    height: 30px; 
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+span>input{
+    width:px;
+    height: 35px;
+    border: 1px solid #dddfe2 ; 
+    margin-right: 20px; 
+
+}
+
+form>hr{
+    border: 0.5px solid #e9ebee 
+}
+
+#Office{
+    margin-left: 155px;
+}
+
+#credit{
+    margin-left: 120px;
+}
+
+form>span>p{
+    font-size: 10px; 
+    color: #969393; 
+    padding-right: 20px;
+}
+
+#submitBtn{
+    background-color: #303ab2;
+    color: white; 
+    padding: 20px 120px 30px 120px;
+    border-radius: 5px;
+    font-weight: 550;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#submitBtn:hover{
+    cursor: pointer;
+}
+
+#bottomSide{
+    display: flex;
+    align-items: center;
+}
+
+#bottomSide>img{
+    width: 80px;
+}
+
+#bottomSide>div>p{
+    font-size: 10px;
+    padding: 20px;
+    color: #969393;
+    line-height: 2;
+}
+
+#div1>div+div{
+    display: flex; 
+    padding: 15px;
+    /* border: 1px solid; */
+}
+#div1>div>h3{
+    padding: 15px;
+
+}
+
+#div1>div>hr{
+    width: 90%;
+    margin: auto;
+}
+
+#outerbox+hr{
+    width: 90%;
+    margin: auto;
+}
+
+#innerBox1>img{
+    width: 60px; 
+} 
+
+#innerBox1{
+    padding-right: 15px;
+}
+
+#innerBox2>p{
+    padding-bottom: 15px;
+    font-size: 13.5px;
+    color: #6e6b6b;
+}
+
+#smallBox{
+     display: flex;
+     justify-content: space-between;
+     font-size: 13.5px;
+    color: #6e6b6b;
+}
+
+#div2>div{
+    display: flex; 
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+}
+
+#div2>div>p{
+    color: rgb(109, 109, 109); 
+    font-weight: 550;
+    font-size: 14.5px;
+}
+#div2>hr{
+    width: 90%;
+    margin: auto; 
+}
+
+#rightDiv>div{
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+#div3>img{
+   width: 100%;
+}
+
+#div3>p{
+    padding-top: 10px;
+    padding-left: 5px;
+    font-weight: 550;
+    font-size: 13.5px;
+}
