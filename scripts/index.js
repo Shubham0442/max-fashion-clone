@@ -33,13 +33,13 @@ function landHome() {
 
 document.querySelector('#mainLogo').addEventListener('click', landHome);
 
-document.querySelector('#basketCounter').innerText = basketData.length;
 let basketData = JSON.parse(localStorage.getItem('basket'));
-console.log(basketData);
-if(basketData.length === 0) {
+if(basketData == null) {
     document.querySelector('#basketCounter').style.visibility = "hidden";
 } else {
+    document.querySelector('#basketCounter').innerText = basketData.length;
     document.querySelector('#basketCounter').style.visibility = "visible";
+    console.log(basketData);
 }
 // Header and Footer part ends here
 
@@ -141,5 +141,6 @@ function setUsername() {
 document.querySelector('#userName').addEventListener('click', setUsername);
 
 console.log('userName: ', userName);
-
-document.querySelector('#user').innerHTML = "Hello " + userName[0];
+if(userName != null) {
+    document.querySelector('#user').innerHTML = "Hello " + userName[0];
+}

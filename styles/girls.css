@@ -85,3 +85,45 @@ img {
 img {
     width: 100%;
 }
+
+#offer {
+    width: 100%;
+    color: white;
+    font-weight: 600;
+    background-color: #303ab2;
+    height: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+#offerBanner {
+    width: 90%;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    cursor: pointer;
+}
+
+.containerB {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 70px;
+}
+
+.banner {
+    cursor: pointer;
+}
+
+#ageSections,
+#categories,
+#trendingStores,
+#budgetZone,
+#summerTrends {
+    display: flex;
+    cursor: pointer;
+    gap: 15px;
+}

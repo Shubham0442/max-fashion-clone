@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Online Shopping at Max</title>
     <script src="https://kit.fontawesome.com/5091a168cb.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
     <link rel="stylesheet" href="./styles/Basket.css">
@@ -164,13 +164,20 @@ function landHome() {
 
 document.querySelector('#mainLogo').addEventListener('click', landHome);
 
-document.querySelector('#basketCounter').innerText = basketData.length;
-// let basketData = JSON.parse(localStorage.getItem('basket'));
-console.log(basketData);
-if(basketData.length === 0) {
+let basketData = JSON.parse(localStorage.getItem('basket'));
+if(basketData == null) {
     document.querySelector('#basketCounter').style.visibility = "hidden";
 } else {
+    document.querySelector('#basketCounter').innerText = basketData.length;
     document.querySelector('#basketCounter').style.visibility = "visible";
+    console.log(basketData);
+}
+
+let userName = JSON.parse(localStorage.getItem('userName'));
+
+console.log('userName: ', userName);
+if(userName != null) {
+    document.querySelector('#user').innerHTML = "Hello " + userName[0];
 }
 // Header and Footer part ends here
 </script>

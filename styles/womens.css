@@ -7,7 +7,7 @@
 
 /* carousel section :start */
 #carouselExampleIndicators {
-    width: 80%;
+    width: 90%;
     margin: auto;
     margin-top: 40px;
 }
@@ -16,7 +16,7 @@
 /* flat off section starts */
 #flat-off {
     padding-top: 120px;
-    width: 80%;
+    width: 90%;
     margin: auto;
     cursor: pointer;
 }
@@ -37,7 +37,7 @@
 
 /* back-to-work section starts */
 .back-to-work {
-    width: 80%;
+    width: 90%;
     height: 500px;
     margin: auto;
     margin-bottom: 120px;
@@ -66,14 +66,12 @@
 
 /* Shop-Plus-Size section starts */
 #Shop-Plus-Size {
-
     display: flex;
     width: 100%;
     margin: auto;
     justify-content: space-around;
     gap: 15px;
     margin-bottom: 60px;
-    border: 1px solid;
     text-align: center;
     cursor: pointer;
 }
@@ -91,7 +89,7 @@
 }
 
 #outer-Shop-Plus-Size {
-    width: 80%;
+    width: 90%;
     margin: auto;
     padding-top: 120px;
 }
@@ -131,7 +129,7 @@
 }
 
 #outer-Shop-By-Category {
-    width: 80%;
+    width: 90%;
     margin: auto;
     padding-top: 60px;
 }
@@ -160,7 +158,7 @@
 }
 
 .outer-Trending-Stores {
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 
@@ -178,7 +176,7 @@
 
 /* Connect-with-us section starts */
 .outer-Connect-with-us {
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 
@@ -200,7 +198,7 @@
 
 /* Gifting-Zone section starts */
 #outer-Gifting-Zone {
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 

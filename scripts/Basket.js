@@ -1,5 +1,3 @@
-
-
 // getting the key from local storage
 let basketData = JSON.parse(localStorage.getItem("basket"))
 
@@ -11,34 +9,33 @@ console.log(No_of_products)
 document.querySelector("#basket-length>p").textContent = `${basketData.length} Products` 
 
 
-
 // mapping the data inside the basket 
 
 
 let displayBasket = (basketData) => {
-
+    
     document.getElementById("left").innerHTML = null
-
+    
     basketData.map(({image, name, price},ind)=>{
-         
+        
         let outerBox1 = document.createElement("div")
         outerBox1.setAttribute("id","outerBox1") 
-
+        
         let innerbox1 = document.createElement("div")
         innerbox1.setAttribute("id","innerbox1") 
-
+        
         let innerbox2 = document.createElement("div")
         innerbox2.setAttribute("id","innerbox2") 
-
+        
         let innerbox3 = document.createElement("div")
         innerbox3.setAttribute("id","innerbox3") 
-
+        
         let image2 = document.createElement("img") 
         image2.src = image 
-
+        
         let name2 = document.createElement("p") 
         name2.innerText = name 
-
+        
         let price2 = document.createElement("p") 
         price2.innerText = `₹ ${price}` 
 
@@ -47,11 +44,11 @@ let displayBasket = (basketData) => {
 
         let infoDiv = document.createElement("div")
         infoDiv.setAttribute("id","infoDiv")
-
+        
         picDiv.append(image2) 
-
+        
         infoDiv.append(name2,price2)
-       
+        
         innerbox1.append(picDiv, infoDiv)
 
         let iconbox = document.createElement("div")
@@ -63,23 +60,23 @@ let displayBasket = (basketData) => {
 
         let Pin = document.createElement("div") 
         Pin.innerText = `Enter Pincode above` 
-
+        
         let midContent = document.createElement("p")
         midContent.setAttribute("id","midContent") 
         midContent.append(iconbox, Delivery, Pin) 
-
+        
         let horLine = document.createElement("hr") 
         
         let Qty = document.createElement("select") 
         let Qty1 = document.createElement("option")
         Qty1.innerText = "Qty1"
         Qty.append(Qty1) 
-
+        
         innerbox2.append(midContent, Qty) 
-
+        
         let removeBtn = document.createElement("button") 
         removeBtn.innerText = "Remove" 
-
+        
         let data1 = {
             image,
             name,
@@ -106,7 +103,7 @@ let displayBasket = (basketData) => {
 
         document.getElementById("left").append(outerBox1)
 
-       
+        
     })
 }
 
@@ -116,13 +113,13 @@ displayBasket(basketData)
 
 // function for removing the items from basket
 function removeFromBasket(elem,index){
-                basketData.splice(index,1)
-                localStorage.setItem("basket",JSON.stringify(basketData))
-                window.location.reload()
+    basketData.splice(index,1)
+    localStorage.setItem("basket",JSON.stringify(basketData))
+    window.location.reload()
     }
 
 
-// function created for checking pincode
+    // function created for checking pincode
 let checkPincode = () =>{
     let pincode1 = document.querySelector("#pincode").value 
     let outputPin = document.querySelector("#checkedOp")
@@ -153,7 +150,7 @@ let total = basketData.reduce(function (sum,elem){
 console.log(total)
 
 let ApplyPromoCode = () =>{
-
+    
     let inputPromp = document.querySelector("#inputPromp").value 
     
     if(inputPromp === "MASAI10")
@@ -173,10 +170,3 @@ mrp.innerText = `₹ ${total}`
 
 let totalPrice = document.querySelector("#totalDiv>div>p+p")
 totalPrice.innerText = `₹ ${total}` 
-
-
-
-
-
-
-

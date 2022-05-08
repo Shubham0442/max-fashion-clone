@@ -20,12 +20,7 @@ function myFunction() {
     console.log("y");
     navbar2.classList.remove("sticky");
   }
-}
-$(".inputs").keyup(function () {
-  if (this.value.length == this.maxLength) {
-    $(this).next('.inputs').focus();
-  }
-});
+};
 
 let userName = JSON.parse(localStorage.getItem('userName'));
 document.querySelector('#user').innerHTML = "Hello " + userName[0];
@@ -42,8 +37,8 @@ document.querySelector('#mainLogo').addEventListener('click', landHome);
 let basketData = JSON.parse(localStorage.getItem('basket'));
 console.log(basketData);
 if (basketData.length === 0) {
-    document.querySelector('#basketCounter').style.visibility = "hidden";
+  document.querySelector('#basketCounter').style.visibility = "hidden";
 } else {
-    document.querySelector('#basketCounter').innerText = basketData.length;
-    document.querySelector('#basketCounter').style.visibility = "visible";
+  document.querySelector('#basketCounter').innerText = basketData.length;
+  document.querySelector('#basketCounter').style.visibility = "visible";
 }
