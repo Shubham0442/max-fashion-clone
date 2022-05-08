@@ -1,4 +1,39 @@
+// Header and Footer part starts here
+import { navbar, footer } from '../components/headerFooter.js';
 
+document.querySelector('#nav').innerHTML = navbar();
+document.querySelector('#footer').innerHTML = footer();
+
+window.onscroll = function () {
+    myFunction();
+}
+
+var navbar2 = document.querySelector('#navbar2');
+var sticky = navbar2.offsetTop;
+
+function myFunction() {
+    console.log(sticky);
+    if (window.pageYOffset >= sticky) {
+        console.log("x");
+        navbar2.classList.add("sticky");
+    } else {
+        console.log("y");
+        navbar2.classList.remove("sticky");
+    }
+}
+
+let userName = JSON.parse(localStorage.getItem('userName'));
+document.querySelector('#user').innerHTML = "Hello " + userName[0];
+// Header and Footer part ends here
+
+let basketData = JSON.parse(localStorage.getItem('basket'));
+console.log(basketData);
+if (basketData.length === 0) {
+    document.querySelector('#basketCounter').style.visibility = "hidden";
+} else {
+    document.querySelector('#basketCounter').innerText = basketData.length;
+    document.querySelector('#basketCounter').style.visibility = "visible";
+}
 
 const WomensData = [];
 
@@ -88,32 +123,32 @@ let displayWomensData = (WomensData) => {
         childDiv2.setAttribute('id', 'childDiv2');
 
         let iconDiv = document.createElement("div")
-        iconDiv.setAttribute("id","iconDiv")
+        iconDiv.setAttribute("id", "iconDiv")
         iconDiv.innerHTML = '<i class="fa-regular fa-heart" id="heartIcon">';
-        iconDiv.addEventListener('click', function() {
+        iconDiv.addEventListener('click', function () {
             // iconDiv.innerHTML = '<i class="fa-solid fa-heart-circle-check"></i>';
             iconDiv.style.color = 'red';
         })
         let innerDiv = document.createElement("div")
         innerDiv.setAttribute("class", "innerDiv")
-         
+
         let imageDiv = document.createElement("div")
-        imageDiv.setAttribute("id","imageDiv")
+        imageDiv.setAttribute("id", "imageDiv")
 
         let image1 = document.createElement("img")
         image1.src = image
-        
-        imageDiv.append(iconDiv,image1);
+
+        imageDiv.append(iconDiv, image1);
 
         let pricesign = document.createElement("p")
-        pricesign.setAttribute("id","pricesign")
+        pricesign.setAttribute("id", "pricesign")
         pricesign.innerText = `₹ ${price}`
 
         let name1 = document.createElement("p")
         name1.innerText = name
 
         let btn = document.createElement("button")
-        btn.innerText = "ADD TO BASKET" 
+        btn.innerText = "ADD TO BASKET"
 
         let data = {
             image,
@@ -121,52 +156,50 @@ let displayWomensData = (WomensData) => {
             price
         }
 
-        btn.addEventListener("click",function(){
-             addToBasket(data)
+        btn.addEventListener("click", function () {
+            addToBasket(data)
         })
 
         innerDiv.append(pricesign, name1, btn);
-        innerDiv.addEventListener('mouseover', function(e) {
+        innerDiv.addEventListener('mouseover', function (e) {
             e.document.querySelector('.innerDiv').style.visibilty = "visible";
         })
 
-        parentDiv.append(imageDiv,innerDiv)
+        parentDiv.append(imageDiv, innerDiv)
 
         document.querySelector("#container").append(parentDiv)
     })
 }
 
 
-let addToBasket = (data) =>{
-    myBasket.push(data) 
+let addToBasket = (data) => {
+    myBasket.push(data)
 
-    localStorage.setItem("basket",JSON.stringify(myBasket));
+    localStorage.setItem("basket", JSON.stringify(myBasket));
 }
 
 
 displayWomensData(WomensData)
 
 
-let handlePrice = () =>{
-       
+let handlePrice = () => {
+
     var selected = document.querySelector("#price").value;
 
-    if(selected === "High-to-Low")
-    {
-        WomensData.sort(function(a,b){
-           return b.price - a.price
+    if (selected === "High-to-Low") {
+        WomensData.sort(function (a, b) {
+            return b.price - a.price
         })
         displayWomensData(WomensData)
     }
-    if(selected ==="Low-to-High")
-    {
-        WomensData.sort(function(a,b){
+    if (selected === "Low-to-High") {
+        WomensData.sort(function (a, b) {
             return a.price - b.price
-         })
-         displayWomensData(WomensData)
-     }
-        
- }
+        })
+        displayWomensData(WomensData)
+    }
+
+}
 
 //  let show = () => {
 //     document.querySelector(".innerDiv").style.visibilty = "visible";
