@@ -153,6 +153,15 @@ function myFunction() {
 let userName = JSON.parse(localStorage.getItem('userName'));
 document.querySelector('#user').innerHTML = "Hello " + userName[0];
 // Header and Footer part ends here
+
+let basketData = JSON.parse(localStorage.getItem('basket'));
+console.log(basketData);
+if (basketData.length === 0) {
+  document.querySelector('#basketCounter').style.visibility = "hidden";
+} else {
+  document.querySelector('#basketCounter').innerText = basketData.length;
+  document.querySelector('#basketCounter').style.visibility = "visible";
+}
 </script>
 
 

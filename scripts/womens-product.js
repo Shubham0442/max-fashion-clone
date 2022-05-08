@@ -89,8 +89,11 @@ let displayWomensData = (WomensData) => {
 
         let iconDiv = document.createElement("div")
         iconDiv.setAttribute("id","iconDiv")
-        iconDiv.innerHTML = '<span><i class="fa-regular fa-heart" id="heartIcon" onclick="addToWishlist()"></span>'
-
+        iconDiv.innerHTML = '<i class="fa-regular fa-heart" id="heartIcon">';
+        iconDiv.addEventListener('click', function() {
+            // iconDiv.innerHTML = '<i class="fa-solid fa-heart-circle-check"></i>';
+            iconDiv.style.color = 'red';
+        })
         let innerDiv = document.createElement("div")
         innerDiv.setAttribute("class", "innerDiv")
          
@@ -168,12 +171,3 @@ let handlePrice = () =>{
 //  let show = () => {
 //     document.querySelector(".innerDiv").style.visibilty = "visible";
 //  }
-
-let basketData = JSON.parse(localStorage.getItem('basket'));
-console.log(basketData);
-if (basketData.length === 0) {
-  document.querySelector('#basketCounter').style.visibility = "hidden";
-} else {
-  document.querySelector('#basketCounter').innerText = basketData.length;
-  document.querySelector('#basketCounter').style.visibility = "visible";
-}
