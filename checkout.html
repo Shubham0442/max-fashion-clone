@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/checkout.css">
+    <script src="https://kit.fontawesome.com/5091a168cb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <hr>
+    <div id="heading-check">
+        <img src="https://i1.lmsin.net/website_images/in/logos/header/logo-max.svg" alt="1">
+        <div>
+            <div id="phoneIcon">  
+                <div><i class="fa-solid fa-phone"></i></div>
+                <p>Call 1800-123-1444</p>
+            </div>
+            <p>Monday-Saturday 09:00AM - 07:00PM</p>
+        </div>
+    </div>
+    <hr>
+
+    <div id="main-container">
+        <div id="leftDiv">
+            <h2>Select a shipping method</h2>
+            <div id="firstInnerDiv">
+                <div>
+                    <h3>Home Delivery</h3>
+                    <p>Get your product delivered to your home</p>
+                </div>
+                <div>
+                    <h3>Click & collect</h3>
+                    <p>Collect your order from a store of your choice</p>
+                </div>
+            </div>
+            <h3>Add your shipping address</h3>
+            <form>
+                <h5 for="Name">Full Name</h5>
+                <input type="text" id="name1" placeholder="Enter name">
+
+                <h5 for="mobil">Mobile Number</h5>
+
+                <span id="numSpan">
+                    <h5 id="code">+91</h5>
+                    <input id="mobNo" type="number">
+                </span>
+
+                <h5 >Pincode</h5>
+                <input id="pin1" type="text" placeholder="Enter pincode">
+
+                <h5 >City</h5>
+                <input type="text" id="city" placeholder="Enter City">
+
+                <h5 for="State">State</h5>
+                <input type="text" id="state" placeholder="Enter State">
+
+                <h5 >Building name or number</h5>
+                <input type="text" id="build" placeholder="Enter Building name or number">
+
+                <h5>Street name or number</h5>
+                <input id="street" type="text" placeholder="Enter Street name or number">
+
+                <h5>Address Type</h5>
+
+                <span>
+                    <input  type="radio" name="x" />Home
+                    <input id="Office" type="radio" name="x"/>Office
+                </span>
+
+                <hr>
+
+                <h3>Select a payment method</h3>
+
+
+                <span>
+                    <input name="y"  type="radio" />Credit Card
+                    <input name="y" id="credit" type="radio" />Debit Card
+                </span>
+
+                <h5>Card Number</h5>
+
+                <input type="number" placeholder="Enter 16 digit card number">
+
+                <h5>Name on card</h5>
+                <input type="text" placeholder="Name on card">
+
+                <h5>Expirary Date & CVV</h5>
+                <span>
+                    <input type="month">
+
+                    <input type="number">
+                </span>
+                <hr>
+
+                <h5>Billing address</h5>
+
+                <span>
+                    <input id="billcheck" type="checkbox">
+                    <h5>Is billing address is same as shipping address</h5>
+                </span>
+                <hr>
+
+                <span>
+                    <input name="y" type="radio">
+                    <img src="https://dd311b21463486cea6e6-ba57f67b7c05f7cbe632f35f74bd7340.ssl.cf3.rackcdn.com/Checkout/order_summary.png"
+                        alt="1">
+                    <h5>Cash on delivery</h5>
+                </span>
+                <hr>
+
+                <span>
+                    <input name="y" type="radio">
+                    <img src="https://i1.lmsin.net/website_images/in/my-account/ico-payment-netbanking.png" alt="1">
+                    <h5>Net Banking</h5>
+                </span>
+                <hr>
+
+                <span>
+                    <input name="y" type="radio">
+                    <img src="https://i1.lmsin.net/website_images/in/my-account/ico-payment-wallet.png" alt="1">
+                    <h5>Wallet</h5>
+                </span>
+                <hr>
+                <span>
+                    <input name="y" type="radio">
+                    <img src="https://i1.lmsin.net/website_images/payment/upi.png" alt="1">
+                    <h5>UPI</h5>
+                </span>
+                <hr>
+
+                <span>
+                    <p>By clicking on Proceed to Payment, you agree to our Terms and Conditions</p>
+                    <input id="submitBtn" type="submit" value="Pay Now">
+                </span>
+                <hr>
+            </form>
+
+            <div id="bottomSide">
+                 <img src="https://i1.lmsin.net/website_images/common/images/logos/logo-comodo.png" alt=""> 
+
+                 <div>
+                    <p>Your credit card details are securely encrypted and passed directly to our PCI DSS compliant Payment Gateway for processing. We only store your credit card's last 4 digits and the expiration date. Your traffic to this page is secured using either a 256-bit or 128-bit SSL certificate depending on your browser version.
+
+                        maxstores.com
+                    </p>
+                    <p>
+                        © 2021 RNA Intellectual Property Limited.
+                        
+                        Privacy Policy - Terms of Use - Terms & Conditions
+                    </p>
+                 </div>
+                 
+            </div>
+        </div>
+        <div id="rightDiv">
+
+            <div>
+                <div id="div1">
+
+                    <div>
+                        <h3>Your order summary</h3>
+                        <hr>
+                    </div>
+                </div>
+                <div id="div2">
+                    <hr>
+                    <div> 
+                        <p>Subtotal</p> 
+                        <p id="Subtotal" ></p>
+                    </div>
+                    <hr>
+                    <div> 
+                        <p>Standard Groung Shipping</p> 
+                        <p>Free</p>
+                    </div>
+                    <hr>
+                    <div> 
+                        <p>Total</p> 
+                        <p id="Total"></p>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            
+            <div id="div3">
+                <p>Ways you can pay</p>
+                <img src="https://marcopolobangalore.com/wp-content/uploads/2021/06/payment-options-e1592680732700.png" alt="">
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
+
+<script src="scripts/checkout.js"></script>
