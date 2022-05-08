@@ -1,9 +1,11 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-family:'Montserrat', sans-serif;
+    font-family:sans-serif;
 }
 
+
+/* heading starts */
 #heading1{
     width: 80%;
     margin: auto;
@@ -15,6 +17,8 @@
     border: 0.5px solid;
     border-color: rgb(230, 234, 238);
 }
+/* heading ends */
+
 
 #basket-length{
     width: 80%;
@@ -25,14 +29,17 @@
 }   
 
 
+/* basket main container */
 #basket-container{
     width: 80%; 
     margin: auto;
     display: flex;
-    gap: 15px; 
+    gap: 14px; 
 
 }
 
+
+/* basket sub-containers */
 #left{
     /* border: 1px solid;  */
     width: 68%;
@@ -40,16 +47,23 @@
 }
 
 #right{
-    border: 1px solid #dedddd;
+    /* border: 1px solid #dedddd; */
     width: 32%;
 }
 
+
+
+/* outerbox ends */
 #outerBox1{
     border: 1px solid #dedddd;
     margin-bottom: 10px;
 }
 
 
+/* outerbox ends */
+
+
+/* innerbox1 section starts */
 #innerbox1{
     display: flex; 
     padding: 15px;
@@ -62,7 +76,7 @@
 #infoDiv{
     font-size: 14px; 
     padding-left: 10px; 
-    font-weight: bold;
+    font-weight:550;
 }
 
 #innerbox1 > div >img{
@@ -74,6 +88,11 @@
     gap: 5px; 
     font-size: 14px;
 }
+
+/* innerbox1 section ends */
+
+
+/* innerbox2 section starts */
 
 #innerbox2{
     display: flex;
@@ -89,8 +108,11 @@
     padding: 4px ;
     background-color:#ecedeb;
 }
+/* innerbox2 section ends */
 
 
+
+/* innerbox3 section starts */
 #innerbox3{
     display: flex; 
     justify-content: space-evenly;
@@ -118,16 +140,210 @@
     cursor: pointer;
 }
 
-#Pincode-section{
+/* innerbox3 section ends */
+
+
+/* Pincode section starts */
+
+#Pincode-section>div{
     display: flex; 
     align-items: center;
     padding: 15px;
-    gap: 15px;
-    border: 1px solid #dedddd;
+    gap: 14px;
+    font-weight:550;
 }
 
-#Pincode-section >input{
-      height: 40px;
-      border-radius: 5px; 
-      border-color: #dedddd;
+#Pincode-section{
+    font-size: 14px;
+    border: 1px solid #dedddd;
+    margin-bottom:10px;
 }
+
+#Pincode-section>div>input{
+      height: 40px;
+      border: 1px solid  #dedddd;
+      border-radius: 5px; 
+      padding: 4px;
+}
+
+#Pincode-section>div>button{
+    padding: 15px 20px 15px 20px;
+    border: 1px solid  #dedddd;
+    background: transparent;
+    border-radius: 5px;
+    font-size: 15px; 
+    color:rgb(186, 185, 185); 
+    font-weight: 550;
+}
+
+#Pincode-section>div>button:hover{
+    cursor: pointer; 
+}
+
+#checkedOp{
+    text-align: center;
+    font-size: 12px; 
+    font-weight: 550;
+}
+/* Pincode section ends */
+
+
+
+ /* total price section starts */
+#offer-section{
+    display: flex;
+    padding:12.5px;
+    border: 1px solid  #dedddd;
+    margin-bottom:10px;
+}
+
+#offer-section>img{
+    width: 110px;
+    padding-right: 20px;
+} 
+
+#offer-section>div>div{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    font-weight: 550; 
+}
+
+#inputPromp{
+    border: 1px solid  #dedddd;
+    border-radius: 5px;
+    height: 20px;
+    font-size: 10px;
+    padding: 2px;
+    margin-top: 5px;
+}
+
+#offer-section>div>div>button{
+    border: 0;
+    padding-left: 5px;
+    background: transparent;
+    color: #303ab2;
+    font-size: 12.5px;
+    font-weight: 550;
+}
+
+#offer-section>div>div>button:hover{
+    cursor: pointer;
+}
+
+#offer-section>div>p{
+    font-size: 13.5px;
+    color: rgb(130, 128, 128);
+}
+
+#MRPprice{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 14px;
+}
+
+#MRPprice>p+p{
+    font-weight: 550;
+}
+
+#shipping{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 14px;
+}
+
+#shipping>p+p{
+    font-weight: 550;
+}
+
+#totalDiv>div{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 18.5px;
+    font-weight: 550;
+}
+
+#total-section{
+    border: 1px solid  #dedddd;
+    padding-bottom: 15px;
+   margin-bottom: 10px;
+}
+
+#total-section>hr{
+    width: 90%;
+    margin: auto;
+    border: 0.4px solid  #efebeb;
+}
+
+#totalDiv>button{
+    display: block;
+    margin: auto;
+    padding: 12px 120px 12px 120px;
+    font-size: 15px;
+    font-weight: 550;
+    color: white;
+    border: 0;
+    background-color: #303ab2;
+
+}
+
+#totalDiv>button:hover{
+    cursor: pointer;
+}
+
+/* total price section ends */
+
+
+/* enroll esction starts */
+#Enroll-section{
+    border: 1px solid  #dedddd;
+    padding: 15px;
+}
+
+#Enroll-section>div{
+    display: flex;
+    align-items: center;
+    padding-bottom: 8px;
+}
+
+#Enroll-section>div>img{
+    width: 25px;
+}
+
+
+#Enroll-section>div>p{
+    padding-right:50px;
+    font-weight: 550;
+    font-size: 15px;
+}
+
+#Enroll-section>p{
+    color: gray;
+    font-size: 14px;
+    padding-bottom: 8px;
+}
+
+#Enroll-section>a{
+    font-weight: 550;
+    font-size: 14px;
+}
+
+#Enroll-section>div>a>button{
+    background: transparent; 
+    padding: 10px;
+    border: 0.5px solid;
+    border-color: #303ab2; 
+    color: #303ab2;
+    font-weight: 550;
+    font-size: 15px;
+
+}
+
+#Enroll-section>div>a>button:hover{
+    cursor: pointer;
+}
+
+/* enroll esction ends */
