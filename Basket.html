@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Online Shopping at Max</title>
     <script src="https://kit.fontawesome.com/5091a168cb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/Basket.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./components/headerFooter.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
@@ -56,7 +59,9 @@
                 <p id="checkedOp"></p>
             </div>
             <div id="offer-section">
-                <img src="https://www.maxfashion.in/static/icons/gift-box.png" alt="1">
+                <div>
+                    <img src="https://www.maxfashion.in/static/icons/gift-box.png" alt="1">
+                </div>
                 <div>
                     <div>
                         <p>Offers for you !</p>
@@ -76,11 +81,6 @@
                     <p></p>
                 </div>
 
-                <!-- <div id="cutoff">
-                    <p>Discounted</p>
-                    <p></p>
-                </div> -->
-
                 <div id="shipping">
                     <p>Shipping charge</p>
                     <p>Free</p>
@@ -91,7 +91,7 @@
                         <p>Total</p>
                         <p></p>
                     </div>
-                    <a href="checkout.html"><button onclick="checkout()" >Checkout now</button></a>
+                    <a href="checkout.html" style="text-decoration: none;"><button onclick="checkout()">Checkout now</button></a>
                 </div>
             </div>
             <div id="Enroll-section">
@@ -122,4 +122,71 @@
 </body>
 
 </html>
+
+<script type="module">
+    // Header and Footer part starts here
+import { navbar, footer } from '../components/headerFooter.js';
+
+document.querySelector('#nav').innerHTML = navbar();
+document.querySelector('#footer').innerHTML = footer();
+
+window.onscroll = function () {
+    myFunction();
+}
+
+var navbar2 = document.querySelector('#navbar2');
+var sticky = navbar2.offsetTop;
+
+function myFunction() {
+    console.log(sticky);
+    if (window.pageYOffset >= sticky) {
+        console.log("x");
+        navbar2.classList.add("sticky");
+    } else {
+        console.log("y");
+        navbar2.classList.remove("sticky");
+    }
+}
+$(".inputs").keyup(function () {
+    if (this.value.length == this.maxLength) {
+        $(this).next('.inputs').focus();
+    }
+});
+
+function landHome() {
+    window.location.href = 'index.html';
+}
+
+document.querySelector('#mainLogo').addEventListener('click', landHome);
+
+let basketData = JSON.parse(localStorage.getItem('basket'));
+if(basketData == null) {
+    document.querySelector('#basketCounter').style.visibility = "hidden";
+} else {
+    document.querySelector('#basketCounter').innerText = basketData.length;
+    document.querySelector('#basketCounter').style.visibility = "visible";
+    console.log(basketData);
+}
+
+let userName = JSON.parse(localStorage.getItem('userName'));
+
+console.log('userName: ', userName);
+if(userName != null) {
+    document.querySelector('#user').innerHTML = "Hello " + userName[0];
+}
+// Header and Footer part ends here
+</script>
 <script src="scripts/Basket.js"></script>
+<!-- icons pack -->
+<script src="https://kit.fontawesome.com/8328d59403.js" crossorigin="anonymous"></script>
+<!-- icons pack -->
+
+<!-- bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<!-- bootstrap -->
+
+<!-- jquery Auto Tab -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- jquery -->

@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Online Shopping at Max</title>
     <link rel="stylesheet" href="styles/checkout.css">
     <script src="https://kit.fontawesome.com/5091a168cb.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
 </head>
 
 <body>
@@ -40,35 +41,35 @@
             <h3>Add your shipping address</h3>
             <form>
                 <h5 for="Name">Full Name</h5>
-                <input type="text" id="name1" placeholder="Enter name">
+                <input required type="text" id="name1" placeholder="Enter name">
 
                 <h5 for="mobil">Mobile Number</h5>
 
                 <span id="numSpan">
                     <h5 id="code">+91</h5>
-                    <input id="mobNo" type="number">
+                    <input required id="mobNo" type="number">
                 </span>
 
                 <h5 >Pincode</h5>
-                <input id="pin1" type="text" placeholder="Enter pincode">
+                <input required id="pin1" type="text" placeholder="Enter pincode">
 
                 <h5 >City</h5>
-                <input type="text" id="city" placeholder="Enter City">
+                <input required type="text" id="city" placeholder="Enter City">
 
                 <h5 for="State">State</h5>
-                <input type="text" id="state" placeholder="Enter State">
+                <input required type="text" id="state" placeholder="Enter State">
 
                 <h5 >Building name or number</h5>
-                <input type="text" id="build" placeholder="Enter Building name or number">
+                <input required type="text" id="build" placeholder="Enter Building name or number">
 
                 <h5>Street name or number</h5>
-                <input id="street" type="text" placeholder="Enter Street name or number">
+                <input required id="street" type="text" placeholder="Enter Street name or number">
 
                 <h5>Address Type</h5>
 
                 <span>
-                    <input  type="radio" name="x" />Home
-                    <input id="Office" type="radio" name="x"/>Office
+                    <input required  type="radio" name="x" />Home
+                    <input required id="Office" type="radio" name="x"/>Office
                 </span>
 
                 <hr>
@@ -77,35 +78,35 @@
 
 
                 <span>
-                    <input name="y"  type="radio" />Credit Card
-                    <input name="y" id="credit" type="radio" />Debit Card
+                    <input required name="y"  type="radio" />Credit Card
+                    <input required name="y" id="credit" type="radio" />Debit Card
                 </span>
 
                 <h5>Card Number</h5>
 
-                <input type="number" placeholder="Enter 16 digit card number">
+                <input required type="number" placeholder="Enter 16 digit card number">
 
                 <h5>Name on card</h5>
-                <input type="text" placeholder="Name on card">
+                <input required type="text" placeholder="Name on card">
 
                 <h5>Expirary Date & CVV</h5>
                 <span>
-                    <input type="month">
+                    <input required type="month">
 
-                    <input type="number">
+                    <input required type="number">
                 </span>
                 <hr>
 
                 <h5>Billing address</h5>
 
                 <span>
-                    <input id="billcheck" type="checkbox">
+                    <input required id="billcheck" type="checkbox">
                     <h5>Is billing address is same as shipping address</h5>
                 </span>
                 <hr>
 
                 <span>
-                    <input name="y" type="radio">
+                    <input required name="y" type="radio">
                     <img src="https://dd311b21463486cea6e6-ba57f67b7c05f7cbe632f35f74bd7340.ssl.cf3.rackcdn.com/Checkout/order_summary.png"
                         alt="1">
                     <h5>Cash on delivery</h5>
@@ -113,20 +114,20 @@
                 <hr>
 
                 <span>
-                    <input name="y" type="radio">
+                    <input required name="y" type="radio">
                     <img src="https://i1.lmsin.net/website_images/in/my-account/ico-payment-netbanking.png" alt="1">
                     <h5>Net Banking</h5>
                 </span>
                 <hr>
 
                 <span>
-                    <input name="y" type="radio">
+                    <input required name="y" type="radio">
                     <img src="https://i1.lmsin.net/website_images/in/my-account/ico-payment-wallet.png" alt="1">
                     <h5>Wallet</h5>
                 </span>
                 <hr>
                 <span>
-                    <input name="y" type="radio">
+                    <input required name="y" type="radio">
                     <img src="https://i1.lmsin.net/website_images/payment/upi.png" alt="1">
                     <h5>UPI</h5>
                 </span>
@@ -134,7 +135,7 @@
 
                 <span>
                     <p>By clicking on Proceed to Payment, you agree to our Terms and Conditions</p>
-                    <input id="submitBtn" type="submit" value="Pay Now">
+                    <input required id="submitBtn" type="submit" value="Pay Now" onclick="payment()">
                 </span>
                 <hr>
             </form>

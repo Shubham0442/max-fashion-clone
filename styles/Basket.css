@@ -40,13 +40,13 @@
 
 
 /* basket sub-containers */
-#left{
+#basket-container #left{
     /* border: 1px solid;  */
     width: 68%;
     
 }
 
-#right{
+#basket-container #right{
     /* border: 1px solid #dedddd; */
     width: 32%;
 }
@@ -148,8 +148,8 @@
 #Pincode-section>div{
     display: flex; 
     align-items: center;
-    padding: 15px;
-    gap: 14px;
+    padding: 10px;
+    gap: 10px;
     font-weight:550;
 }
 
@@ -167,7 +167,7 @@
 }
 
 #Pincode-section>div>button{
-    padding: 15px 20px 15px 20px;
+    padding: 9px 17px;
     border: 1px solid  #dedddd;
     background: transparent;
     border-radius: 5px;
@@ -192,15 +192,16 @@
  /* total price section starts */
 #offer-section{
     display: flex;
-    padding:12.5px;
-    border: 1px solid  #dedddd;
-    margin-bottom:10px;
+    justify-content: space-between;
+    gap: 7px;
+    border: 1px solid #dedddd;
+    margin-bottom: 10px;
 }
 
-#offer-section>img{
-    width: 110px;
+#right #offer-section img{
+    width: 100%;
     padding-right: 20px;
-} 
+}
 
 #offer-section>div>div{
     display: flex;

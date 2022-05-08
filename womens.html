@@ -13,6 +13,29 @@
   <link rel="stylesheet" href="./styles/womens.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <title>Online Shopping at Max</title>
+
+  <style>
+    #navbar {
+      width: 100%;
+      height: 40px;
+      align-items: center;
+      display: flex;
+      justify-content: space-evenly;
+      gap: 22%;
+      background-color: black;
+      margin: auto;
+    }
+
+    #navbar>div {
+      color: white;
+      height: 50px;
+      display: flex;
+      font-size: 13px;
+      gap: 30px;
+      align-items: center;
+      font-weight: 550;
+    }
+  </style>
 </head>
 
 <body>
@@ -21,34 +44,38 @@
   <header id="nav"></header>
   <!-- navbar ends -->
 
-  <div id="body">
-    <!-- top-section carousel starts -->
-    <div id="Top-section">
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="images/buy-buy-buy.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="images/just-in.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="images/max-curve.png" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="images/celebrate-in-style.jpeg" class="d-block w-100" alt="...">
-        </div>
-      </div>
+  <div id="offer">Buy 2 Get 1 Free + Flat 10% off on ₹999. Code: MASAI10<i class="fa-solid fa-angle-right"
+      style="font-size: 13px; padding-left: 5px;"></i></div>
+
+  <div class="slideshow-containerB">
+
+    <div class="mySlides slideIn">
+      <img
+        src="https://lmsin.net/cdn-cgi/image/w=1232,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/MAX-Banner2-desktop-Women-06MAY2022.jpg"
+        style="width:100%">
     </div>
+
+    <div class="mySlides slideIn">
+      <img
+        src="https://lmsin.net/cdn-cgi/image/w=1232,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/MAX-Banner3-desktopp-Women-05MAY2022.jpg"
+        style="width:100%">
+    </div>
+
+    <div class="mySlides slideIn">
+      <img
+        src="https://lmsin.net/cdn-cgi/image/w=1232,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/MAX-Banner4-desktop-Women-04MAY2022.jpg"
+        style="width:100%">
+    </div>
+
+  </div>
+  <a class="prev"><i class="fa-solid fa-chevron-left"></i></a>
+  <a class="next"><i class="fa-solid fa-chevron-right"></i></a>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" id="slide1"></span>
+    <span class="dot" id="slide2"></span>
+    <span class="dot" id="slide3"></span>
   </div>
   <!-- top-section carousel ends -->
 
@@ -252,7 +279,7 @@
 
 </html>
 <script>
-  
+
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

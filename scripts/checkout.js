@@ -78,7 +78,10 @@ let Total =  document.querySelector("#Total")
 Total.innerText = `₹ ${total}`
 
         
-
+let payment = () => {
+  alert('Payment Successful');
+  window.location.href = 'index.html';
+}
 
 
 // document.querySelector("form").addEventListener("click", myformData) 
