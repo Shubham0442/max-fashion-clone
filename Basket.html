@@ -14,8 +14,12 @@
 </head>
 
 <body>
+
+    <!-- navbar starts -->
     <header id="nav"></header>
-    <!-- <h1>Basket page</h1> -->
+    <!-- navbar ends -->
+
+<!-- heading starts -->
     <div id="heading1">
         <p>Your Shopping Basket</p>
         <hr>
@@ -24,46 +28,97 @@
         <p></p>
     </div>
 
+    <!-- heading ends -->
+
+ <!-- main-container starts -->
+
     <div id="basket-container">
+
+ <!-- main-container ends -->
+
+
+        <!-- left sub-container starts -->
         <div id="left"></div>
+
+        <!-- left sub-container ends -->
+
+
+        <!-- right sub-container starts -->
         <div id="right">
+
+            
             <div id="Pincode-section">
-                <p>Deliver to</p>
-                <input type="number" id="pincode" placeholder="Enter pincode">
-                <button>Check</button>
+                <div>
+                    <p>Deliver to</p>
+                    <input type="number" id="pincode" placeholder="Enter pincode">
+                    <button onclick="checkPincode()">Check</button>
+                </div>
+                <p id="checkedOp"></p>
             </div>
-            <div id="offer-section"></div>
-            <div id="total-section"></div>
-            <div id="Enroll-section"></div>
+            <div id="offer-section">
+                <img src="https://www.maxfashion.in/static/icons/gift-box.png" alt="1">
+                <div>
+                    <div>
+                        <p>Offers for you !</p>
+                    </div>
+                    <p id="myPromo">Your promo-code is</p>
+                    <h5>MASAI10</h5>
+                    <div>
+                        <input type="text" id="inputPromp" placeholder="Enter Promo-code">
+                        <button onclick="ApplyPromoCode()">Apply</button>
+                    </div>
+                </div>
+                
+            </div>
+            <div id="total-section">
+                <div id="MRPprice">
+                    <p>Total MRP</p>
+                    <p></p>
+                </div>
+
+                <!-- <div id="cutoff">
+                    <p>Discounted</p>
+                    <p></p>
+                </div> -->
+
+                <div id="shipping">
+                    <p>Shipping charge</p>
+                    <p>Free</p>
+                </div>
+                <hr>
+                <div id="totalDiv">
+                    <div>
+                        <p>Total</p>
+                        <p></p>
+                    </div>
+                    <button>Checkout now</button>
+                </div>
+            </div>
+            <div id="Enroll-section">
+                <div>
+                    <img src="https://scontent-pnq1-2.xx.fbcdn.net/v/t1.18169-9/12250091_102438956792348_7281136701605232462_n.png?_nc_cat=109&ccb=1-6&_nc_sid=09cbfe&_nc_ohc=H9agxr5gWIkAX_HvIIp&_nc_ht=scontent-pnq1-2.xx&oh=00_AT_hdA8uuBDa5UAgI247OiLHrHBJxKfIt6ZzwTiYv0x3hg&oe=629D8550"
+                        alt="1">
+                    <p>Landmark Reward points</p>
+                    <a href="https://www.maxfashion.in/in/en/my-account/loyalty"><button>Enroll now</button></a>
+                </div>
+                    <p>Tap now to enrol for Landmark Rewards and get 3 points with this purchase and redeem for
+                        discounts in next eligible purchase(s)</p>
+                
+                    <a href="https://www.maxfashion.in/in/en/my-account/loyalty">Learn more</a>
+            </div>
         </div>
+
+        <!-- right sub-container ends -->
     </div>
 
+    <!-- main-container ends -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- footer starts -->
 
     <footer id="footer"></footer>
+
+    <!-- footer ends -->
 </body>
 
 </html>
