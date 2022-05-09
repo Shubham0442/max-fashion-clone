@@ -129,51 +129,51 @@
 
 <script type="module">
     // Header and Footer part starts here
-import { navbar, footer } from '../components/headerFooter.js';
+    import { navbar, footer } from '../components/headerFooter.js';
 
-document.querySelector('#nav').innerHTML = navbar();
-document.querySelector('#footer').innerHTML = footer();
+    document.querySelector('#nav').innerHTML = navbar();
+    document.querySelector('#footer').innerHTML = footer();
 
-window.onscroll = function () {
-    myFunction();
-}
-
-var navbar2 = document.querySelector('#navbar2');
-var sticky = navbar2.offsetTop;
-
-function myFunction() {
-    console.log(sticky);
-    if (window.pageYOffset >= sticky) {
-        console.log("x");
-        navbar2.classList.add("sticky");
-    } else {
-        console.log("y");
-        navbar2.classList.remove("sticky");
+    window.onscroll = function () {
+        myFunction();
     }
-}
 
-let userName = JSON.parse(localStorage.getItem('userName'));
+    var navbar2 = document.querySelector('#navbar2');
+    var sticky = navbar2.offsetTop;
 
-console.log('userName: ', userName);
-if(userName != null) {
-    document.querySelector('#user').innerHTML = "Hello " + userName[0];
-}
-// Header and Footer part ends here
+    function myFunction() {
+        console.log(sticky);
+        if (window.pageYOffset >= sticky) {
+            console.log("x");
+            navbar2.classList.add("sticky");
+        } else {
+            console.log("y");
+            navbar2.classList.remove("sticky");
+        }
+    }
 
-function landHome() {
-    window.location.href = 'index.html';
-}
+    let userName = JSON.parse(localStorage.getItem('userName'));
 
-document.querySelector('#mainLogo').addEventListener('click', landHome);
+    console.log('userName: ', userName);
+    if (userName != null) {
+        document.querySelector('#user').innerHTML = "Hello " + userName[0];
+    }
+    // Header and Footer part ends here
 
-let basketData = JSON.parse(localStorage.getItem('basket'));
-if(basketData == null) {
-    document.querySelector('#basketCounter').style.visibility = "hidden";
-} else {
-    document.querySelector('#basketCounter').innerText = basketData.length;
-    document.querySelector('#basketCounter').style.visibility = "visible";
-    console.log(basketData);
-}
+    function landHome() {
+        window.location.href = 'index.html';
+    }
+
+    document.querySelector('#mainLogo').addEventListener('click', landHome);
+
+    let basketData = JSON.parse(localStorage.getItem('basket'));
+    if (basketData == null || basketData.length == 0) {
+        document.querySelector('#basketCounter').style.visibility = "hidden";
+    } else {
+        document.querySelector('#basketCounter').innerText = basketData.length;
+        document.querySelector('#basketCounter').style.visibility = "visible";
+        console.log(basketData);
+    }
 </script>
 <script src="./scripts/womens-product.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

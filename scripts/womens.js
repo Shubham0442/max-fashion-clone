@@ -46,47 +46,47 @@ let slideIndex = 0;
 showSlides();
 
 function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) { slideIndex = 1 }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
-  setTimeout(showSlides, 6000);
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+    setTimeout(showSlides, 6000);
 }
 
 let slideIndexM = 1;
 showSlidesM(slideIndexM);
 
 function plusSlides(n) {
-  showSlidesM(slideIndexM += n);
+    showSlidesM(slideIndexM += n);
 }
 
 function currentSlide(n) {
-  showSlidesM(slideIndexM = n);
+    showSlidesM(slideIndexM = n);
 }
 
 function showSlidesM(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) { slideIndexM = 1 }
-  if (n < 1) { slideIndexM = slides.length }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndexM - 1].style.display = "block";
-  dots[slideIndexM - 1].className += " active";
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) { slideIndexM = 1 }
+    if (n < 1) { slideIndexM = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndexM - 1].style.display = "block";
+    dots[slideIndexM - 1].className += " active";
 }
 
 
@@ -211,7 +211,7 @@ let goToTop = () => {
 }
 
 let basketData = JSON.parse(localStorage.getItem('basket'));
-if (basketData == null) {
+if (basketData == null || basketData.length == 0) {
     document.querySelector('#basketCounter').style.visibility = "hidden";
 } else {
     document.querySelector('#basketCounter').innerText = basketData.length;

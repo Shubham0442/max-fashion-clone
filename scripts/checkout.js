@@ -78,9 +78,10 @@ let Total =  document.querySelector("#Total")
 Total.innerText = `₹ ${total}`
 
         
-let payment = () => {
+function payment() {
   alert('Payment Successful');
   window.location.href = 'index.html';
+  localStorage.setItem('basket', JSON.stringify([]));
 }
 
 

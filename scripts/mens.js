@@ -90,7 +90,7 @@ function showSlidesM(n) {
 }
 
 let basketData = JSON.parse(localStorage.getItem('basket'));
-if (basketData == null) {
+if (basketData == null || basketData.length == 0) {
   document.querySelector('#basketCounter').style.visibility = "hidden";
 } else {
   document.querySelector('#basketCounter').innerText = basketData.length;

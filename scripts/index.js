@@ -34,7 +34,7 @@ function landHome() {
 document.querySelector('#mainLogo').addEventListener('click', landHome);
 
 let basketData = JSON.parse(localStorage.getItem('basket'));
-if(basketData == null) {
+if (basketData == null || basketData.length == 0) {
     document.querySelector('#basketCounter').style.visibility = "hidden";
 } else {
     document.querySelector('#basketCounter').innerText = basketData.length;
@@ -141,6 +141,6 @@ function setUsername() {
 document.querySelector('#userName').addEventListener('click', setUsername);
 
 console.log('userName: ', userName);
-if(userName != null) {
+if (userName != null) {
     document.querySelector('#user').innerHTML = "Hello " + userName[0];
 }
