@@ -45,11 +45,11 @@ if(basketData == null) {
 
 document.querySelector('#women').addEventListener('click', gotoWomen);
 function gotoWomen() {
-    window.location.href = 'women.html';
+    window.location.href = 'womens.html';
 }
 document.querySelector('#men').addEventListener('click', gotoMen);
 function gotoMen() {
-    window.location.href = 'men.html';
+    window.location.href = 'mens.html';
 }
 document.querySelector('#girls').addEventListener('click', gotoGirls);
 function gotoGirls() {

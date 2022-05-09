@@ -181,7 +181,7 @@ function footer() {
     <div>
         <ul>
             <li style="color: black;"><b>women</b></li>
-            <li>tops</li>
+            <li><a href="womens-product.html" target="_blank">tops</a></li>
             <li>dresses & jumpsuits</li>
             <li>bottoms</li>
             <li>winterwear</li>
@@ -195,7 +195,7 @@ function footer() {
     <div>
         <ul>
             <li style="color: black;"><b>mens</b></li>
-            <li><a href="mens-product.html" target="_blank" rel="noopener noreferrer">tops</a></li>
+            <li>tops</li>
             <li>bottoms</li>
             <li>sportswear</li>
             <li>winterwear</li>
