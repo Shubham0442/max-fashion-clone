@@ -183,14 +183,13 @@ form>span>p{
 #submitBtn{
     background-color: #303ab2;
     color: white; 
-    padding: 20px 120px 30px 120px;
+    padding: 15px 120px;
+    border: none;
     border-radius: 5px;
     font-weight: 550;
     margin-top: 30px;
     margin-bottom: 30px;
-}
-
-#submitBtn:hover{
+    font-size: 18px;
     cursor: pointer;
 }
 
