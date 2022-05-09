@@ -34,6 +34,11 @@ https://maxfashion-clonelc.netlify.app/index.html
 ## Blog Link
 
 https://medium.com/@jaisprajwal.1999/masai-school-construct-week-project-3283853a3fe6
+
+## Presentation Video Link
+
+https://drive.google.com/drive/u/0/folders/1_3n_BeYLns1v98uMqRjsZlgA6TS1J5ML
+
 ## 🔗 Team Members
     1. Prajwal Jaiswal - Leader
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/J-Prajwal)
